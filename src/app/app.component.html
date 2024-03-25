@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="app.component.css">
+<h1>Listado de Alumnos</h1>
+<p>
+    Utilice la funcion Math.random para el booleano en la variable <strong>aprobado</strong>
+</p>
+<button (click)="refrescarPagina()">Volver a Cargar</button>
+<table class="table-alumnos">
+    <thead>
+        <tr>
+            <th>N.°</th>
+            <th>Nombre</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let estudiante of examen; let i = index"
+        [style.font-weight]="estudiante.aprobado ? 700 : 200"
+        [style.color]="estudiante.aprobado ? 'green' : 'red' "
+        style="border: 1px solid #000;">
+            <td>{{i + 1}}</td>
+            <td>{{estudiante.nombre}}</td>
+            <td>{{estudiante.aprobado ? "Aprobado" : "Desaprobado"}}</td>
+        </tr>
+    </tbody>
+</table>

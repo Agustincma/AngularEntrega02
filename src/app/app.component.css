@@ -1,0 +1,39 @@
+*{
+    font-family: sans-serif;
+}
+table{
+    width: 500px;
+    height: 300px;
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+thead {
+    height: 30px;
+    background-color: aliceblue;
+}
+
+td, th {
+    border: 1px solid #000;
+
+}
+button {
+    width: 150px;
+    height: 40px;
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+button:hover {
+    background-color: #7e7e7e;
+    transition: 0.1s linear;
+}
+button:active {
+    background-color: #ffffff;
+    color: #000;
+    transition: 0.1s linear;
+}
